@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <!-- Moralis SDK code -->
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    <script src="https://unpkg.com/moralis/dist/moralis.js"></script>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <title>Simple IPFS Uploader</title> 
+  </head>
+  <body>
+      <!-- Navigation -->
+
+      <div class="container-fluid">
+          <div class="row">
+            <nav>
+                <div class="nav-wrapper">
+                  <a href="#!" class="brand-logo"> SIMPLE IPFS UPLOADER</a>
+                  <ul class="right hide-on-med-and-down">
+                    <li><a class="waves-effect waves-light btn" id="btn-login">Login Wallet</a></li>
+                  </ul>
+                </div>
+              </nav> 
+          </div>
+      </div>
+
+    <input type="text" name="metadataName" placeholder="Enter File Name">
+    <textarea name="metadataDescription" id="metadataDescription" cols="30" rows="10" placeholder="Enter Description Here"></textarea>
+    <input type="file" name ="fileInput" id="fileInput">
+    <br>
+    <br>
+    <a class="waves-effect waves-light btn" onclick=uploading()>Upload</a>
+    
+
+    <script src="main.js"></script>
+
+    </script>
+  </body>
+</html>
